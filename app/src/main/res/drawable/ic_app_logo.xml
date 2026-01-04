@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Background Layer: Gradient Circle -->
+    <path android:pathData="M256,256m-240,0a240,240 0,1 1,480 0a240,240 0,1 1,-480 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="256"
+                android:centerY="256"
+                android:gradientRadius="240"
+                android:type="radial">
+                <item android:color="#FF6A11CB" android:offset="0.0"/>
+                <item android:color="#FF2575FC" android:offset="1.0"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glowing Sparkle / Spark -->
+    <path
+        android:fillColor="#80FFFFFF"
+        android:pathData="M256,120l15,60l60,15l-60,15l-15,60l-15,-60l-60,-15l60,-15z" />
+
+    <!-- Main Symbol: Quotation Mark (Opening) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M180,220c-20,0 -35,15 -35,35s15,35 35,35c5,0 10,-1 15,-3c-5,15 -15,25 -25,30l10,15c20,-10 35,-30 35,-55c0,-35 -15,-57 -35,-57z" />
+
+    <!-- Main Symbol: Quotation Mark (Closing) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M332,220c-20,0 -35,15 -35,35s15,35 35,35c5,0 10,-1 15,-3c-5,15 -15,25 -25,30l10,15c20,-10 35,-30 35,-55c0,-35 -15,-57 -35,-57z" />
+
+    <!-- Subtle Rising Arc (Growth/Rising Sun) -->
+    <path
+        android:pathData="M120,400q136,-80 272,0"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeColor="#40FFFFFF" />
+
+</vector>
